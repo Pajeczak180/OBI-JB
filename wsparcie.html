@@ -19,7 +19,8 @@
     <main class="m41" id="m4">
         <h1>Razem przeciw hejtowi – wsparcie zamiast nienawiści</h1>
         <span>Hejt w sieci rani prawdziwych ludzi. Ta zrzutka powstała, aby wspierać osoby dotknięte cyberprzemocą, edukować i reagować tam, gdzie słowa zamieniają się w krzywdę. Każda wpłata to krok w stronę bezpieczniejszego internetu i realnej pomocy tym, którzy jej potrzebują.</span>
-        <input type="button" value="Wpłać" onclick="wplac()">
+        <input type="button" value="Wpłać" onclick="wplac()"><br><br><br>
+        <input type="button" value="Nie wpłacam oszustom" onclick="nie()">
     </main>
     <main class="b4" id="b4">
         <form action="">
@@ -27,12 +28,20 @@
             Nazwisko <input type="text" id="nazwisko"><br>
             PESEL <input type="number" id="pesel"><br>
             Numer karty kredytowej <input type="number" id="kred"><br>
-            Kwota zł <input type="number" id="zl">
-            <input type="text" value="Wpłać" onclick="wplac2()">
+            Kwota zł <input type="number" id="zl"><br>
+            <input type="button" value="Wpłać" onclick="wplac2()"><br><br><br>
+            <input type="button" value="Rezygnuje" onclick="nie()">
         </form>
     </main>
+    <main class="c4" id="c4">
+        <h1 id="wynik3">Gratulacje, udało ci się przejść próbę. Pamiętaj aby nie wpisywać PESELU i numeru karty kredytowych na niezaufanych stronach</h1>
+    </main>
+    <main class="d4" id="d4">
+        <h1 id="wynik4">Przegrałeś. Pamiętaj aby nie wpisywać PESELU i numeru karty kredytowych na niezaufanych stronach</h1>
+        <p id="wynik4a">Hacker: dzięki za kasiore hehe</p>
+    </main>
     <aside class="a42" id="a4">
-        <p class="wynik2"></p>
+        <p id="wynik2"></p>
     </aside>
     <script>
         var dolary = 273
@@ -41,16 +50,19 @@
             m4.style.visibility = `hidden`
             a4.style.visibility = `hidden`
             b4.style.visibility = `visible`
-            var kwota = document.getElementById("zl").value
-            console.log(kwota)
-            console.log(dolary)
-            dolary = dolary + kwota
         }
         function wplac2(){
-            m4.style.visibility = `visible`
+            d4.style.visibility = `visible`
             a4.style.visibility = `visible`
             b4.style.visibility = `hidden`
+            var kwota = Number(document.getElementById("zl").value)
+            dolary += kwota
             document.getElementById("wynik2").textContent = `Zebraliśmy już ${dolary}/1000 zł`
+        }
+        function nie(){
+            m4.style.visibility = `hidden`
+            a4.style.visibility = `hidden`
+            c4.style.visibility = `visible`
         }
     </script>
 </body>
