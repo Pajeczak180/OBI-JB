@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Start</title>
+</head>
+<body>
+    <header class="h1">Niebezpieczeństwa w sieci</header>
+    <main class="b1">
+        <img src="logo.png" alt="IT" class="logo">
+        <a href="glowna.html"><span class="menu">Strona Główna</span></a>      
+        <a href="niebiez.html"><span class="menu">Materiały</span></a>
+        <a href="quiz.html"><span class="menu">Quiz</span></a>
+        <a href="wsparcie.html"><span class="menu">Wsparcie</span></a>
+        <a href="kontakt.html"><span class="menu">Kontakt</span></a> 
+    </main>
+    <main class="lewy">
+        <input type="button" value="&lt;" onclick="funkcja(-1)" class="przycisk">
+    </main>
+    <main class="srodkowy">
+        <div class="s1">
+            <span id="cos1" class="cos1"></span><br>
+            <span id="cos2" class="cos2"></span>
+        </div>
+        <img src="1.png" alt="Aktywne zdjęcie" class="srodek" id="zdjecie">
+    </main>
+    <main class="prawy" >
+        <input type="button" value="&gt;" onclick="funkcja(1)" class="przycisk">
+    </main>
+    <script>
+        let a = 1
+        const el = document.getElementById("cos1")
+        const ol = document.getElementById("cos2")
+        el.textContent = `Phishing`
+        ol.textContent = `Podszywanie się pod bank, firmę lub znajomego w celu wyłudzenia haseł, danych lub pieniędzy (np. fałszywy e-mail lub SMS).`
+        function funkcja(x){
+            a += x
+            if (a < 1){
+                a = 5
+            }
+            else if (a > 5){
+                a = 1
+            }
+            document.getElementById("zdjecie").src = a + ".png"
+            switch(a){
+                case 1:
+                el.textContent = `Phishing`
+                ol.textContent = `Podszywanie się pod bank, firmę lub znajomego w celu wyłudzenia haseł, danych lub pieniędzy (np. fałszywy e-mail lub SMS).`
+                break
+                case 2:
+                el.textContent = `Malware`
+                ol.textContent = `Programy, które mogą kraść dane, szpiegować użytkownika lub uszkadzać system.`
+                break
+                case 3:
+                el.textContent = `Ransomware`
+                ol.textContent = `Blokuje dostęp do plików lub komputera i żąda okupu za ich odzyskanie.`
+                break
+                case 4:
+                el.textContent = `Kradzież tożsamości`
+                ol.textContent = `Wykorzystanie cudzych danych osobowych do oszustw lub zaciągania zobowiązań.`
+                break
+                case 5:
+                el.textContent = `Ataki hakerskie`
+                ol.textContent = `Nieautoryzowany dostęp do kont, systemów lub sieci.`
+                break
+            }
+        }
+    </script>
+    <footer>
+        <span class="f1">
+            Autor: Jakub Bojanek
+        </span>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Materiały</title>
+</head>
+<body>
+    <header class="h1">Dzień bezpiecznego Internetu</header>
+    <main class="b1">
+        <img src="logo.png" alt="IT" class="logo">
+        <a href="glowna.html"><span class="menu">Strona Główna</span></a>      
+        <a href="niebiez.html"><span class="menu">Materiały</span></a>
+        <a href="quiz.html"><span class="menu">Quiz</span></a>
+        <a href="wsparcie.html"><span class="menu">Wsparcie</span></a>
+        <a href="kontakt.html"><span class="menu">Kontakt</span></a> 
+    </main>
+    <main class="m41" id="m4">
+        <h1>Razem przeciw hejtowi – wsparcie zamiast nienawiści</h1>
+        <span>Hejt w sieci rani prawdziwych ludzi. Ta zrzutka powstała, aby wspierać osoby dotknięte cyberprzemocą, edukować i reagować tam, gdzie słowa zamieniają się w krzywdę. Każda wpłata to krok w stronę bezpieczniejszego internetu i realnej pomocy tym, którzy jej potrzebują.</span>
+        <input type="button" value="Wpłać" onclick="wplac()">
+    </main>
+    <main class="b4" id="b4">
+        <form action="">
+            Imię <input type="text" id="imie"><br>
+            Nazwisko <input type="text" id="nazwisko"><br>
+            PESEL <input type="number" id="pesel"><br>
+            Numer karty kredytowej <input type="number" id="kred"><br>
+            Kwota zł <input type="number" id="zl">
+            <input type="text" value="Wpłać" onclick="wplac2()">
+        </form>
+    </main>
+    <aside class="a42" id="a4">
+        <p class="wynik2"></p>
+    </aside>
+    <script>
+        var dolary = 273
+        document.getElementById("wynik2").textContent = `Zebraliśmy już ${dolary}/1000 zł`
+        function wplac(){
+            m4.style.visibility = `hidden`
+            a4.style.visibility = `hidden`
+            b4.style.visibility = `visible`
+            var kwota = document.getElementById("zl").value
+            console.log(kwota)
+            console.log(dolary)
+            dolary = dolary + kwota
+        }
+        function wplac2(){
+            m4.style.visibility = `visible`
+            a4.style.visibility = `visible`
+            b4.style.visibility = `hidden`
+            document.getElementById("wynik2").textContent = `Zebraliśmy już ${dolary}/1000 zł`
+        }
+    </script>
+</body>
+</html>

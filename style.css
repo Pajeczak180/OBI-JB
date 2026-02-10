@@ -1,0 +1,197 @@
+body, html{
+    background-color: aliceblue;
+    color: black;
+    font-family: 'Times New Roman';
+    margin: 0;
+}
+.h1{
+    background-color: lightskyblue;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+.menu{
+    font-weight: bold;
+    text-align: right;
+    float: left;
+    margin: 10px;
+    font-size: 20px;
+}
+.b1{
+    width: 80%;
+    height: 100px;
+    background-color: cyan;
+    margin-top: 20px;
+    margin-left: 10%;
+    border-radius: 20px;
+}
+.logo{
+    float: left;
+    margin-right: 250px;
+}
+.m1{
+    width: 80%;
+    height: 300px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 10%;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.m11{
+    width: 20%;
+    height: 300px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 10%;
+    border-radius: 20px;
+    font-size: 20px;
+    float: left;
+}
+.m12{
+    width: 20%;
+    height: 300px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 10%;
+    border-radius: 20px;
+    font-size: 20px;
+    float: left;
+}
+.m13{
+    width: 20%;
+    height: 300px;
+    background-color: white;
+    margin-top: 20px;
+    margin-right: 10%;
+    border-radius: 20px;
+    font-size: 20px;
+    float: left;
+}
+.m41{
+    width: 60%;
+    height: 300px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 10%;
+    border-radius: 20px;
+    font-size: 20px;
+    float: left;
+}
+.a42{
+    width: 20%;
+    height: 300px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    float: left;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: cyan;
+    text-align: right;
+    margin-top: auto;
+}
+.f1{
+    margin-top: 100px;
+    margin-right: 5px;
+    width: 100%;
+    height: 50px;
+    clear: both;
+}
+.e1{
+    position: absolute;
+}
+.e2{
+    visibility: hidden;
+    position: absolute;
+}
+.e3{
+    visibility: hidden;
+    position: absolute;
+}
+.e4{
+    visibility: hidden;
+    position: absolute;
+}
+.e5{
+    visibility: hidden;
+    position: absolute;
+}
+.e6{
+    visibility: hidden;
+    position: absolute;
+}
+.e7{
+    visibility: hidden;
+    position: absolute;
+}
+.e8{
+    visibility: hidden;
+    position: absolute;
+}
+.e9{
+    visibility: hidden;
+    position: absolute;
+}
+.e10{
+    visibility: hidden;
+    position: absolute;
+}
+.e11{
+    visibility: hidden;
+    position: absolute;
+}
+.lewy, .srodkowy, .prawy {
+    background-color: white;
+    height: 576px;
+    float: left;
+}
+.lewy, .prawy {
+    width: 15%;
+}
+.srodkowy {
+    width: 70%;
+    position: relative;
+    z-index: 1;
+    opacity: 80%;
+}
+.przycisk{
+    background-color: white;
+    color: cyan;
+    border: none;
+    font-size: 400%;
+    display: block;
+    margin: auto;
+    padding-top: 210px;
+}
+.s1{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+}
+.srodek{
+    position: relative;
+    z-index: 1;
+}
+.cos1{
+    font-size: 80px;
+}
+.cos2{
+    font-size: 40px;
+}
+.b4{
+    visibility: hidden;
+    position: absolute;
+    width: 60%;
+    height: 300px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 10%;
+    border-radius: 20px;
+    font-size: 20px;
+    float: left;
+}

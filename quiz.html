@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <header class="h1">Dzień bezpiecznego Internetu</header>
+    <main class="b1">
+        <img src="logo.png" alt="IT" class="logo">
+        <a href="glowna.html"><span class="menu">Strona Główna</span></a>      
+        <a href="niebiez.html"><span class="menu">Materiały</span></a>
+        <a href="quiz.html"><span class="menu">Quiz</span></a>
+        <a href="wsparcie.html"><span class="menu">Wsparcie</span></a>
+        <a href="kontakt.html"><span class="menu">Kontakt</span></a> 
+    </main>
+    <main class="m1">
+        <div class="e1" id="e1">
+            <p>1. Co to jest phishing?</p>
+            <form action="">
+                <input type="radio" name="miasto" id="a1">A. Rodzaj wirusa niszczącego dysk twardy <br>
+                <input type="radio" name="miasto" id="b1">B. Metoda wyłudzania danych poprzez podszywanie się pod zaufane instytucje <br>
+                <input type="radio" name="miasto" id="c1">C. Program do szyfrowania plików <br>
+                <input type="radio" name="miasto" id="d1">D. Atak polegający na przeciążeniu serwera <br>
+                <input type="button" value="Dalej" onclick="sprawdz1()" >
+            </form>
+        </div>
+        <div class="e2" id="e2">
+            <p>2. Które hasło jest NAJBEZPIECZNIEJSZE?</p>
+            <form action="">
+                <input type="radio" name="miasto" id="a2">A. haslo123<br>
+                <input type="radio" name="miasto" id="b2">B. qwerty<br>
+                <input type="radio" name="miasto" id="c2">C. Pa$9kL!2z@<br>
+                <input type="radio" name="miasto" id="d2">D. 12345678<br>
+                <input type="button" value="Dalej" onclick="sprawdz2()" >
+            </form>
+        </div>
+        <div class="e3" id="e3">
+            <p>3. Co oznacza skrót VPN?</p>
+            <form action="">
+                <input type="radio" name="miasto" id="a3">A. Virtual Private Network<br>
+                <input type="radio" name="miasto" id="b3">B. Verified Public Network<br>
+                <input type="radio" name="miasto" id="c3">C. Visual Protection Node<br>
+                <input type="radio" name="miasto" id="d3">D. Virtual Personal Number<br>
+                <input type="button" value="Dalej" onclick="sprawdz3()" >
+            </form>
+        </div>
+            <div class="e4" id="e4">
+            <p>4. Malware to:</p>
+            <form action="">
+                <input type="radio" name="miasto" id="a4">A. Sprzęt komputerowy<br>
+                <input type="radio" name="miasto" id="b4">B. Legalne oprogramowanie biurowe<br>
+                <input type="radio" name="miasto" id="c4">C. Złośliwe oprogramowanie<br>
+                <input type="radio" name="miasto" id="d4">D. System operacyjny<br>
+                <input type="button" value="Dalej" onclick="sprawdz4()" >
+            </form>
+        </div>
+            <div class="e5" id="e5">
+            <p>5. Które działanie najlepiej chroni przed atakami?</p>
+            <form action="">
+                <input type="radio" name="miasto" id="a5">A. Używanie jednego hasła wszędzie<br>
+                <input type="radio" name="miasto" id="b5">B. Wyłączanie aktualizacji systemu<br>
+                <input type="radio" name="miasto" id="c5">C. Regularne aktualizacje oprogramowania<br>
+                <input type="radio" name="miasto" id="d5">D. Otwieranie wszystkich załączników e-mail<br>
+                <input type="button" value="Dalej" onclick="sprawdz5()" >
+            </form>
+        </div>
+            <div class="e6" id="e6">
+            <p>6. Co to jest ransomware?</p>
+            <form action="">
+                <input type="radio" name="miasto" id="a6">A. Program antywirusowy<br>
+                <input type="radio" name="miasto" id="b6">B. Atak blokujący dostęp do danych i żądający okupu<br>
+                <input type="radio" name="miasto" id="c6">C. Kopia zapasowa systemu<br>
+                <input type="radio" name="miasto" id="d6">D. Bezpieczna metoda szyfrowania<br>
+                <input type="button" value="Dalej" onclick="sprawdz6()" >
+            </form>
+        </div>
+            <div class="e7" id="e7">
+            <p>7. Uwierzytelnianie dwuskładnikowe (2FA) polega na:</p>
+            <form action="">
+                <input type="radio" name="miasto" id="a7">A. Podaniu hasła dwa razy<br>
+                <input type="radio" name="miasto" id="b7">B. Logowaniu z dwóch urządzeń<br>
+                <input type="radio" name="miasto" id="c7">C. Użyciu hasła i dodatkowego potwierdzenia<br>
+                <input type="radio" name="miasto" id="d7">D. Zmianie hasła co 2 dni<br>
+                <input type="button" value="Dalej" onclick="sprawdz7()" >
+            </form>
+        </div>
+            <div class="e8" id="e8">
+            <p>8. Które z poniższych jest przykładem danych wrażliwych?</p>
+            <form action="">
+                <input type="radio" name="miasto" id="a8">A. Ulubiony kolor<br>
+                <input type="radio" name="miasto" id="b8">B. Numer PESEL<br>
+                <input type="radio" name="miasto" id="c8">C. Nazwa miasta<br>
+                <input type="radio" name="miasto" id="d8">D. Typ przeglądarki<br>
+                <input type="button" value="Dalej" onclick="sprawdz8()" >
+            </form>
+        </div>
+            <div class="e9" id="e9">
+            <p>9. Co należy zrobić po wykryciu podejrzanego e-maila?</p>
+            <form action="">
+                <input type="radio" name="miasto" id="a9">A. Odpisać nadawcy<br>
+                <input type="radio" name="miasto" id="b9">B. Kliknąć link, aby sprawdzić<br>
+                <input type="radio" name="miasto" id="c9">C. Usunąć lub zgłosić jako phishing<br>
+                <input type="radio" name="miasto" id="d9">D. Przekazać znajomym<br>
+                <input type="button" value="Dalej" onclick="sprawdz9()" >
+            </form>
+        </div>
+            <div class="e10" id="e10">
+            <p>10. Firewall to:</p>
+            <form action="">
+                <input type="radio" name="miasto" id="a10">A. Program do tworzenia kopii zapasowych<br>
+                <input type="radio" name="miasto" id="b10">B. Zabezpieczenie kontrolujące ruch sieciowy<br>
+                <input type="radio" name="miasto" id="c10">C. Wirus komputerowy<br>
+                <input type="radio" name="miasto" id="d10">D. Przeglądarka internetowa<br>
+                <input type="button" value="Dalej" onclick="sprawdz10()" >
+            </form>
+        </div>
+        <div class="e11" id="e11">
+            <p id="wynik">a</p>
+            <input type="button" value="Uruchom test ponownie" onclick="restart()">
+        </div>
+    <script>
+        var a = 0
+        function sprawdz1(){
+            let b1 = document.getElementById("b1").checked;
+            if(b1){
+                a += 1
+            }
+            e1.style.visibility = `hidden`
+            e2.style.visibility = `visible`
+        }
+        function sprawdz2(){
+            let c2 = document.getElementById("c2").checked;
+            if(c2){
+                a += 1
+            }
+            e2.style.visibility = `hidden`
+            e3.style.visibility = `visible`
+        }
+        function sprawdz3(){
+            let a3 = document.getElementById("a3").checked;
+            if(a3){
+                a += 1
+            }
+            e3.style.visibility = `hidden`
+            e4.style.visibility = `visible`
+        }
+            function sprawdz4(){
+            let c4 = document.getElementById("c4").checked;
+            if(c4){
+                a += 1
+            }
+            e4.style.visibility = `hidden`
+            e5.style.visibility = `visible`
+        }
+            function sprawdz5(){
+            let c5 = document.getElementById("c5").checked;
+            if(c5){
+                a += 1
+            }
+            e5.style.visibility = `hidden`
+            e6.style.visibility = `visible`
+        }
+            function sprawdz6(){
+            let b6 = document.getElementById("b6").checked;
+            if(b6){
+                a += 1
+            }
+            e6.style.visibility = `hidden`
+            e7.style.visibility = `visible`
+        }
+            function sprawdz7(){
+            let c7 = document.getElementById("c7").checked;
+            if(c7){
+                a += 1
+            }
+            e7.style.visibility = `hidden`
+            e8.style.visibility = `visible`
+        }
+            function sprawdz8(){
+            let b8 = document.getElementById("b8").checked;
+            if(b8){
+                a += 1
+            }
+            e8.style.visibility = `hidden`
+            e9.style.visibility = `visible`
+        }
+            function sprawdz9(){
+            let c9 = document.getElementById("c9").checked;
+            if(c9){
+                a += 1
+            }
+            e9.style.visibility = `hidden`
+            e10.style.visibility = `visible`
+        }
+            function sprawdz10(){
+            let b10 = document.getElementById("b10").checked;
+            if(b10){
+                a += 1
+            }
+            e10.style.visibility = `hidden`
+            e11.style.visibility = `visible`
+            document.getElementById("wynik").textContent = `Ukończyłeś Quiz z wynikiem: ${a}/10 (${a/10*100}%)`
+        }
+        function restart(){
+            a = 0
+            e11.style.visibility = `hidden`
+            e1.style.visibility = `visible`
+        }
+    </script>
+    <footer>
+        <span class="f1">
+            Autor: Jakub Bojanek
+        </span>
+    </footer>
+</body>
+</html>
