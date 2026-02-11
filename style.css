@@ -39,6 +39,15 @@ body, html{
     border-radius: 20px;
     font-size: 20px;
 }
+.m5{
+    width: 80%;
+    height: 600px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 10%;
+    border-radius: 20px;
+    font-size: 20px;
+}
 .m11{
     width: 20%;
     height: 300px;
@@ -94,16 +103,13 @@ footer{
     background-color: cyan;
     text-align: right;
     margin-top: auto;
-}
-.f1{
+    clear: both;
     margin-top: 100px;
     margin-right: 5px;
-    width: 100%;
-    height: 50px;
-    clear: both;
 }
 .e1{
     position: absolute;
+    float: left;
 }
 .e2{
     visibility: hidden;

@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Materiały</title>
+    <title>Wsparcie</title>
 </head>
 <body>
-    <header class="h1">Dzień bezpiecznego Internetu</header>
+    <header class="h1">Prośba o wsparcie</header>
     <main class="b1">
         <img src="logo.png" alt="IT" class="logo">
-        <a href="index.html"><span class="menu">Strona Główna</span></a>      
-        <a href="niebiez.html"><span class="menu">Materiały</span></a>
+        <a href="index.html"><span class="menu">Start</span></a>  
+        <a href="dbi.html"><span class="menu">O DBI</span></a>             
+        <a href="niebiez.html"><span class="menu">Niebezpieczeństwa</span></a>
         <a href="quiz.html"><span class="menu">Quiz</span></a>
         <a href="wsparcie.html"><span class="menu">Wsparcie</span></a>
         <a href="kontakt.html"><span class="menu">Kontakt</span></a> 
@@ -43,9 +44,14 @@
     <aside class="a42" id="a4">
         <p id="wynik2"></p>
     </aside>
+    <footer>
+        <span class="f1">
+            Autor: Jakub Bojanek
+        </span>
+    </footer>
     <script>
         var dolary = 273
-        document.getElementById("wynik2").textContent = `Zebraliśmy już ${dolary}/1000 zł`
+        document.getElementById("wynik2").textContent = `Zebraliśmy już ${dolary}/1000 zł (${dolary/1000*100}%)`
         function wplac(){
             m4.style.visibility = `hidden`
             a4.style.visibility = `hidden`
@@ -57,7 +63,7 @@
             b4.style.visibility = `hidden`
             var kwota = Number(document.getElementById("zl").value)
             dolary += kwota
-            document.getElementById("wynik2").textContent = `Zebraliśmy już ${dolary}/1000 zł`
+            document.getElementById("wynik2").textContent = `Zebraliśmy już ${dolary}/1000 zł (${dolary/1000*100}%)`
         }
         function nie(){
             m4.style.visibility = `hidden`
